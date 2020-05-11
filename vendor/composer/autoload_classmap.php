@@ -155,6 +155,7 @@ return array(
     'App\\Models\\MasterData\\ClassD' => $baseDir . '/app/Models/MasterData/ClassD.php',
     'App\\Models\\MasterData\\ClassSession' => $baseDir . '/app/Models/MasterData/ClassSession.php',
     'App\\Models\\MasterData\\Grade' => $baseDir . '/app/Models/MasterData/Grade.php',
+    'App\\Models\\MasterData\\UserSessions' => $baseDir . '/app/Models/MasterData/UserSessions.php',
     'App\\Models\\RecordingModel' => $baseDir . '/app/Models/RecordingModel.php',
     'App\\Models\\Traits\\Uuid' => $baseDir . '/app/Models/Traits/Uuid.php',
     'App\\Models\\UserCourse' => $baseDir . '/app/Models/UserCourse.php',

@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="057112a0-7820-4f17-8030-382c4fe9d781" name="Default Changelist" comment="" />
+    <list default="true" id="057112a0-7820-4f17-8030-382c4fe9d781" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Operation/OperationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Operation/OperationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/User/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/User/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/Includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/Includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/frontend/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +31,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -178,9 +199,11 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1bGlmf2G8fZ3Vn7z8njixnuXA9P" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fictball" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
@@ -227,11 +250,30 @@
       <workItem from="1588611262847" duration="9207000" />
       <workItem from="1588690194065" duration="8974000" />
       <workItem from="1588737571502" duration="594000" />
+      <workItem from="1588866356536" duration="18454000" />
+      <workItem from="1588996859794" duration="885000" />
+      <workItem from="1589048076615" duration="7511000" />
+      <workItem from="1589085738625" duration="13000" />
+      <workItem from="1589086166103" duration="3057000" />
+      <workItem from="1589188259729" duration="2719000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -253,22 +295,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php</url>
-          <line>237</line>
+          <line>173</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php</url>
-          <line>227</line>
+          <line>163</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php</url>
-          <line>156</line>
+          <line>92</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php</url>
-          <line>31</line>
+          <line>22</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\Backend\MasterData\Grade\GradeController" />
             <option name="methodName" value="updateGrade" />
@@ -277,7 +319,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php</url>
-          <line>47</line>
+          <line>38</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\Backend\MasterData\Grade\GradeController" />
             <option name="methodName" value="getData_grades" />

@@ -989,6 +989,7 @@ class ComposerStaticInit293bac44cce2f26b35d2455f0ffa42b1
         'App\\Models\\MasterData\\ClassD' => __DIR__ . '/../..' . '/app/Models/MasterData/ClassD.php',
         'App\\Models\\MasterData\\ClassSession' => __DIR__ . '/../..' . '/app/Models/MasterData/ClassSession.php',
         'App\\Models\\MasterData\\Grade' => __DIR__ . '/../..' . '/app/Models/MasterData/Grade.php',
+        'App\\Models\\MasterData\\UserSessions' => __DIR__ . '/../..' . '/app/Models/MasterData/UserSessions.php',
         'App\\Models\\RecordingModel' => __DIR__ . '/../..' . '/app/Models/RecordingModel.php',
         'App\\Models\\Traits\\Uuid' => __DIR__ . '/../..' . '/app/Models/Traits/Uuid.php',
         'App\\Models\\UserCourse' => __DIR__ . '/../..' . '/app/Models/UserCourse.php',

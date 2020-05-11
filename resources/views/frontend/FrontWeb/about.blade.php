@@ -21,52 +21,6 @@
     </section>
     <!-- breadcrumb start-->
 
-    <!-- feature_part start-->
-    <section class="feature_part single_feature_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-xl-3 align-self-center">
-                    <div class="single_feature_text ">
-                        <h2>Awesome <br> Feature</h2>
-                        <p>Set have great you male grass yielding an yielding first their you're
-                            have called the abundantly fruit were man </p>
-                        <a href="#" class="btn_1">Read More</a>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="single_feature">
-                        <div class="single_feature_part">
-                            <span class="single_feature_icon"><i class="ti-layers"></i></span>
-                            <h4>Better Future</h4>
-                            <p>Set have great you male grasses yielding yielding first their to
-                                called deep abundantly Set have great you male</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="single_feature">
-                        <div class="single_feature_part">
-                            <span class="single_feature_icon"><i class="ti-new-window"></i></span>
-                            <h4>Qualified Trainers</h4>
-                            <p>Set have great you male grasses yielding yielding first their to called
-                                deep abundantly Set have great you male</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-xl-3">
-                    <div class="single_feature">
-                        <div class="single_feature_part single_feature_part_2">
-                            <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
-                            <h4>Job Oppurtunity</h4>
-                            <p>Set have great you male grasses yielding yielding first their to called deep
-                                abundantly Set have great you male</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- upcoming_event part start-->
 
     <!-- learning part start-->
     <section class="learning_part">
@@ -74,7 +28,7 @@
             <div class="row align-items-sm-center align-items-lg-stretch">
                 <div class="col-md-7 col-lg-7">
                     <div class="learning_img">
-                        <img src="img/learning_img.png" alt="">
+                        <img src="{{ asset('FrontWeb/img/learning_img.png') }}" alt="">
                     </div>
                 </div>
                 <div class="col-md-5 col-lg-5">
@@ -82,16 +36,22 @@
                         <h5>About us</h5>
                         <h2>Learning with Love
                             and Laughter</h2>
-                        <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast
-                            greater grass signs abundantly have greater also
-                            days years under brought moveth.</p>
-                        <ul>
-                            <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
-                                gathered wear</li>
-                            <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
-                                night.</li>
-                        </ul>
-                        <a href="#" class="btn_1">Read More</a>
+                        <p>Mathematics is the driving force of the modern world and it is a must for everyone to have a
+                            sufficient knowledge about it, to conquer the world. This is important as it molds the human
+                            brain to be creative, fruitful and think effectively.</p>
+
+                        <p>With the goal of educating all the students in Sri Lanka using the modern age technology,
+                            we are providing each student with the ability to reach their maximum capability in Mathematics. </p>
+                        <p>
+                            The chief of this organization and the head master of all the classes is Mr. Dinusha Gamage.
+                        </p>
+{{--                        <ul>--}}
+{{--                            <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas--}}
+{{--                                gathered wear</li>--}}
+{{--                            <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given--}}
+{{--                                night.</li>--}}
+{{--                        </ul>--}}
+{{--                        <a href="#" class="btn_1">Read More</a>--}}
                     </div>
                 </div>
             </div>

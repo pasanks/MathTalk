@@ -26,11 +26,10 @@
                 <div class="banner_text">
                     <div class="banner_text_iner">
                         <h5>Every child yearns to learn</h5>
-                        <h1>Making Your Childs
+                        <h1>Making Your
                             World Better</h1>
-                        <p>Replenish seasons may male hath fruit beast were seas saw you arrie said man beast whales
-                            his void unto last session for bite. Set have great you'll male grass yielding yielding
-                            man</p>
+                        <p>We’re an organization with the incentive to teach Mathematics to students from grade 6 to
+                            upwards till Advanced Level Examination, covering both London and Local syllabi.</p>
                         <a href="{{route('frontend.courses')}}" class="btn_1">View Classes </a>
                         <a href="{{route('frontend.registerView')}}" class="btn_2">Get Started </a>
                     </div>
@@ -47,19 +46,18 @@
         <div class="row">
             <div class="col-sm-6 col-xl-3 align-self-center">
                 <div class="single_feature_text ">
-                    <h2>Awesome <br> Feature</h2>
-                    <p>Set have great you male grass yielding an yielding first their you're
-                        have called the abundantly fruit were man </p>
-                    <a href="#" class="btn_1">Read More</a>
+                    <h2>Reasons to <br> Choose Us</h2>
+                    <p> </p>
+{{--                    <a href="#" class="btn_1">Read More</a>--}}
                 </div>
             </div>
             <div class="col-sm-6 col-xl-3">
                 <div class="single_feature">
                     <div class="single_feature_part">
                         <span class="single_feature_icon"><i class="ti-layers"></i></span>
-                        <h4>Better Future</h4>
-                        <p>Set have great you male grasses yielding yielding first their to
-                            called deep abundantly Set have great you male</p>
+                        <h4>Versatility in the subject matter</h4>
+                        <p>All students in Sri Lanka studying Mathematics in both Local and London syllabi will be
+                            guided in English as well as Sinhala.</p>
                     </div>
                 </div>
             </div>
@@ -67,9 +65,9 @@
                 <div class="single_feature">
                     <div class="single_feature_part">
                         <span class="single_feature_icon"><i class="ti-new-window"></i></span>
-                        <h4>Qualified Trainers</h4>
-                        <p>Set have great you male grasses yielding yielding first their to called
-                            deep abundantly Set have great you male</p>
+                        <h4>Priority to each student</h4>
+                        <p>Students with simple mathematics knowledge to students with advanced subject knowledge will
+                            be given attention according to their requirement to reap the best results.</p>
                     </div>
                 </div>
             </div>
@@ -77,9 +75,9 @@
                 <div class="single_feature">
                     <div class="single_feature_part single_feature_part_2">
                         <span class="single_service_icon style_icon"><i class="ti-light-bulb"></i></span>
-                        <h4>Job Oppurtunity</h4>
-                        <p>Set have great you male grasses yielding yielding first their to called deep
-                            abundantly Set have great you male</p>
+                        <h4>Standardized teachings</h4>
+                        <p>Entrusted with the highest degree of professionality. We use standardized teaching content
+                            and methods of teaching, for the maximum outcome. </p>
                     </div>
                 </div>
             </div>
@@ -102,16 +100,16 @@
                     <h5>About us</h5>
                     <h2>Learning with Love
                         and Laughter</h2>
-                    <p>Fifth saying upon divide divide rule for deep their female all hath brind Days and beast
-                        greater grass signs abundantly have greater also
-                        days years under brought moveth.</p>
-                    <ul>
-                        <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas
-                            gathered wear</li>
-                        <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given
-                            night.</li>
-                    </ul>
-                    <a href="#" class="btn_1">Read More</a>
+                    <p>Mathematics is the driving force of the modern world and it is a must for everyone to have a
+                        sufficient knowledge about it, to conquer the world. This is important as it molds the human
+                        brain to be creative, fruitful and think effectively.</p>
+{{--                    <ul>--}}
+{{--                        <li><span class="ti-pencil-alt"></span>Him lights given i heaven second yielding seas--}}
+{{--                            gathered wear</li>--}}
+{{--                        <li><span class="ti-ruler-pencil"></span>Fly female them whales fly them day deep given--}}
+{{--                            night.</li>--}}
+{{--                    </ul>--}}
+                    <a  href="{{route('frontend.about')}}" class="btn_1">Read More</a>
                 </div>
             </div>
         </div>
@@ -125,25 +123,25 @@
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <div class="single_member_counter">
-                    <span class="counter">1024</span>
+                    <span class="counter">{{$CourseCount}}</span>
                     <h4>Courses </h4>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single_member_counter">
-                    <span class="counter">960</span>
+                    <span class="counter">{{$SessionCount}}</span>
                     <h4>Sessions</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single_member_counter">
-                    <span class="counter">1020</span>
+                    <span class="counter">{{$userCount}}</span>
                     <h4>Online Students</h4>
                 </div>
             </div>
             <div class="col-lg-3 col-sm-6">
                 <div class="single_member_counter">
-                    <span class="counter">1000</span>
+                    <span class="counter">650</span>
                     <h4>Ofline Students</h4>
                 </div>
             </div>
@@ -254,45 +252,48 @@
     </div>
 </section>
 <!--::blog_part end::-->
-
+<br>
+<br>
+<br>
+<br>
 <!-- learning part start-->
-<section class="advance_feature learning_part">
-    <div class="container">
-        <div class="row align-items-sm-center align-items-xl-stretch">
-            <div class="col-md-6 col-lg-6">
-                <div class="learning_member_text">
-                    <h5>Advance feature</h5>
-                    <h2>Our Advance Educator
-                        Learning System</h2>
-                    <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days
-                        and beast greater grass signs abundantly have greater also use over face earth
-                        days years under brought moveth she star</p>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-12 col-lg-6">
-                            <div class="learning_member_text_iner">
-                                <span class="ti-pencil-alt"></span>
-                                <h4>Learn Anywhere</h4>
-                                <p>There earth face earth behold she star so made void two given and also our</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-12 col-lg-6">
-                            <div class="learning_member_text_iner">
-                                <span class="ti-stamp"></span>
-                                <h4>Expert Teacher</h4>
-                                <p>There earth face earth behold she star so made void two given and also our</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="learning_img">
-                    <img src="{{ asset('FrontWeb/img/advance_feature_img.png') }}" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{--<section class="advance_feature learning_part">--}}
+{{--    <div class="container">--}}
+{{--        <div class="row align-items-sm-center align-items-xl-stretch">--}}
+{{--            <div class="col-md-6 col-lg-6">--}}
+{{--                <div class="learning_member_text">--}}
+{{--                    <h5>Advance feature</h5>--}}
+{{--                    <h2>Our Advance Educator--}}
+{{--                        Learning System</h2>--}}
+{{--                    <p>Fifth saying upon divide divide rule for deep their female all hath brind mid Days--}}
+{{--                        and beast greater grass signs abundantly have greater also use over face earth--}}
+{{--                        days years under brought moveth she star</p>--}}
+{{--                    <div class="row">--}}
+{{--                        <div class="col-sm-6 col-md-12 col-lg-6">--}}
+{{--                            <div class="learning_member_text_iner">--}}
+{{--                                <span class="ti-pencil-alt"></span>--}}
+{{--                                <h4>Learn Anywhere</h4>--}}
+{{--                                <p>There earth face earth behold she star so made void two given and also our</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                        <div class="col-sm-6 col-md-12 col-lg-6">--}}
+{{--                            <div class="learning_member_text_iner">--}}
+{{--                                <span class="ti-stamp"></span>--}}
+{{--                                <h4>Expert Teacher</h4>--}}
+{{--                                <p>There earth face earth behold she star so made void two given and also our</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--            <div class="col-lg-6 col-md-6">--}}
+{{--                <div class="learning_img">--}}
+{{--                    <img src="{{ asset('FrontWeb/img/advance_feature_img.png') }}" alt="">--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</section>--}}
 <!-- learning part end-->
 
 <!--::review_part start::-->

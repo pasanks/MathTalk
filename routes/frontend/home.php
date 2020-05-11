@@ -44,6 +44,7 @@ Route::group(['middleware' => ['auth']], function () {
     Route::group(['namespace' => 'Operation', 'as' => 'operation.'], function () {
         // User Dashboard Specific
         Route::get('enroll_course/{id}', [OperationController::class, 'enroll_course'])->name('enroll_course');
+        Route::get('confirmPaymentDetails', [OperationController::class, 'confirmPaymentDetails'])->name('confirmPaymentDetails');
 
 
     });

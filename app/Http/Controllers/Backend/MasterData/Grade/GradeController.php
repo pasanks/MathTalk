@@ -18,16 +18,7 @@ class GradeController extends Controller
         return view('backend.MasterData.Grade.create');
    }
 
-   public function store(Request $request){
-       $newGrade = new Grade();
-       $newGrade->grade = $request->get('grade');
-       $newGrade->description = $request->get('description');
-       $newGrade->created_by = \Auth::user()->id;
-       $newGrade->created_at = Carbon::now();
-       $newGrade->save();
-       return Redirect::route('admin.grade.index')->withFlashSuccess('New grade has been created!');
 
-   }
 
     public function updateGrade(Request $request){
         $updateGrade = Grade::find($request->get('id'));

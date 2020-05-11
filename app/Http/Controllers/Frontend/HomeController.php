@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Auth\User;
 use App\Models\MasterData\ClassD;
+use App\Models\MasterData\ClassSession;
 use App\Models\UserCourse;
 
 /**
@@ -17,8 +19,14 @@ class HomeController extends Controller
     public function index()
     {
         $courses = ClassD::all();
+        $userCount = User::select(['*'])->get()->count();
+        $CourseCount = ClassD::select(['*'])->get()->count();
+        $SessionCount = ClassSession::select(['*'])->get()->count();
         return view('frontend.FrontWeb.index')->with([
-        'courses'=>$courses
+        'courses'=>$courses,
+        'userCount'=>$userCount,
+        'CourseCount'=>$CourseCount,
+        'SessionCount'=>$SessionCount
     ]);
     }
     public function about()
