@@ -165,7 +165,7 @@
 
                                     @else
 
-                                        <a href="{{route('frontend.operation.enroll_course',$courseDetails->id)}}" class="btn_1 d-block">Enroll the class</a>
+{{--                                        <a href="{{route('frontend.operation.enroll_course',$courseDetails->id)}}" class="btn_1 d-block">Enroll the class</a>--}}
 
                                     @endif
                                 @endforeach

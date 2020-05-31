@@ -3,25 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="057112a0-7820-4f17-8030-382c4fe9d781" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Session/SessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Session/SessionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Operation/OperationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Operation/OperationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/User/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/User/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Auth/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Auth/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repositories/Frontend/Auth/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Frontend/Auth/UserRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_08_033555_create_user_sessions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_08_033555_create_user_sessions_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/FrontWeb/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/FrontWeb/img/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/backend/classSession.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backend/classSession.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/frontend/home.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/course_details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/course_details.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -264,7 +246,7 @@
       <workItem from="1589806861371" duration="1373000" />
       <workItem from="1590255058033" duration="11056000" />
       <workItem from="1590596709905" duration="7592000" />
-      <workItem from="1590843067894" duration="13084000" />
+      <workItem from="1590843067894" duration="14414000" />
     </task>
     <servers />
   </component>

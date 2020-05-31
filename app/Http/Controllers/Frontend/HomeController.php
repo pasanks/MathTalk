@@ -59,7 +59,7 @@ class HomeController extends Controller
     public function courseDetails($id)
     {
         $courseDetails = ClassD::find($id);
-        $UserCourse = UserCourse::all();
+        $UserCourse = UserCourse::select(['*'])->where('user_id',\Auth::user()->id)->get();
         return view('frontend.FrontWeb.course_details')->with([
             'courseDetails'=>$courseDetails,
             'UserCourse'=>$UserCourse
