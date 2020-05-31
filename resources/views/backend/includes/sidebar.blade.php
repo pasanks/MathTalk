@@ -41,6 +41,14 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link {{
+                    active_class(Route::is('admin/report/tranReportIndex'))
+                }}" href="{{ route('admin.report.tranReportIndex') }}">
+                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                    @lang('Transaction Report')
+                </a>
+            </li>
 
 
         @if ($logged_in_user->isAdmin())

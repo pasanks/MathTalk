@@ -90,6 +90,13 @@ class UserRepository extends BaseRepository
      * @throws \Throwable
      * @return \Illuminate\Database\Eloquent\Model|mixed
      */
+
+    function FormatPhoneNo($string) {
+        $stringWOSpaces = str_replace(' ', '', $string);
+        $numbersOnly =  preg_replace('/[^A-Za-z0-9\-]/', '', $stringWOSpaces);
+        $phone_number = preg_replace('/^0/','94',$stringWOSpaces);
+        return '+'.$phone_number;
+    }
     public function create(array $data)
     {
         return DB::transaction(function () use ($data) {
@@ -97,7 +104,7 @@ class UserRepository extends BaseRepository
                 'first_name' => $data['first_name'],
                 'last_name' => $data['last_name'],
                 'email' => $data['email'],
-                'contact_no' => $data['contact_no'],
+                'contact_no' => $this->FormatPhoneNo($data['contact_no']),
                 'school' => $data['school'],
                 'contact_address' => $data['contact_address'],
                 'confirmation_code' => md5(uniqid(mt_rand(), true)),

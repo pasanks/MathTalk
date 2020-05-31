@@ -110,6 +110,15 @@
 
                             </div>
 
+                            <div class="row">
+
+                                <div class="form-group  col-md-6">
+                                    <label for="exampleFormControlTextarea1">Payment Deadline*</label>
+                                    <input type="date" class="form-control" id="payment_end_date" name="payment_end_date"
+                                           placeholder="Payment Deadline" required>
+                                </div>
+                            </div>
+
 
                             <button type="submit" class="btn btn-primary"><span class="cil-contrast btn-icon mr-2"></span>
                                 Submit

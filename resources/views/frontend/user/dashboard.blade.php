@@ -23,7 +23,7 @@
                     <div class="list-group list-group-horizontal" id="list-tab" role="tablist">
                         <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-courses" role="tab" aria-controls="home">Courses</a>
                         <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
-                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Payment History</a>
                         {{--                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>--}}
 
                     </div>
@@ -59,18 +59,31 @@
                                         <ul class="course_list" id="sessionList">
 
                                             @for($i=0;$i<count($sessionDataArr);$i++)
+                                                @if($enrolledCourses->course_id == $sessionDataArr[$i][0] )
                                             <li class="justify-content-between align-items-center d-flex">
-                                                <p>{{$sessionDataArr[$i][1]}}</p>
-                                                @if($sessionDataArr[$i][2] == '0')
+                                                <p>{{$sessionDataArr[$i][2]}}</p>
+                                                @if($sessionDataArr[$i][3] == '1')
+                                                    @if($sessionDataArr[$i][4] == '1')
+                                                    <a class="disable btn_4"  href="#">Monthly Payment Paid</a>
+                                                    @elseif($sessionDataArr[$i][5] == '1')
+                                                        <button type="button" id="paymentTrigBtn" class="btn_4 paymentTrigBtn" data-toggle="modal"
+                                                                value="{{$sessionDataArr[$i][1]}}" data-target="#paymentTrigger">
+                                                            Weekly Payment Available
+                                                        </button>
+                                                        @else
+                                                        <button type="button" id="paymentTrigBtn" class="btn_4 paymentTrigBtn" data-toggle="modal"
+                                                                value="{{$sessionDataArr[$i][1]}}" data-target="#paymentTrigger">
+                                                            Pay
+                                                        </button>
+                                                    @endif
 
-                                                    <button type="button" id="paymentTrigBtn" class="btn_4 paymentTrigBtn" data-toggle="modal"
-                                                            value="{{$sessionDataArr[$i][0]}}" data-target="#paymentTrigger">
-                                                        Pay
-                                                    </button>
-                                                @else
-                                                    <a class="disable btn_4"  href="#">Paid</a>
-                                                @endif
+
+                                                    @else
+                                                    <a class="disable btn_4"  href="#">Payment Deadline Expired</a>
+                                                    @endif
+
                                             </li>
+                                                @endif
                                                 @endfor
                                         </ul>
 
@@ -211,7 +224,40 @@
 
                         </div>
 {{--                        Messages--}}
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-settings-list">
+                            <div class="table-responsive">
+                                <table class="uk-table uk-table-hover uk-table-striped" style="font-size:11.5px;width: 100%"  >
+                                    <thead>
+                                    <tr>
+                                        <th>Ref</th>
+                                        <th>Class</th>
+                                        <th>Session</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Payment Date</th>
+                                        <th>Tran Mode</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        @for($t = 0;$t<count($arrTranData); $t++)
+                                            <tr>
+                                            <td>{{$arrTranData[$t][0]}}</td>
+                                            <td>{{$arrTranData[$t][1]}}</td>
+                                            <td>{{$arrTranData[$t][2]}}</td>
+                                            <td>{{$arrTranData[$t][3]}}</td>
+                                            <td>{{$arrTranData[$t][4]}}</td>
+                                            <td>{{$arrTranData[$t][5]}}</td>
+                                            <td>{{$arrTranData[$t][6]}}</td>
+                                            </tr>
+                                        @endfor
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -223,8 +269,9 @@
 
 
 
-<!-- Payment Trigger -->
-<div class="modal fade" id="paymentTrigger" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+<!-- Modal -->
+<div class="modal fade" id="paymentTrigger" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="top:100px">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -233,88 +280,101 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form>
             <div class="modal-body">
-                <div class="form-group">
-                    <label for="username" class="col-4 col-form-label">Class Name : </label>
-                    <label id="class_name" class="col-12 col-form-label">Class Name d</label>
-                </div>
-                <div class="form-group">
-                    <label for="username" class="col-4 col-form-label">Session Name : </label>
-                    <label id="session_name" class="col-12 col-form-label">Session Name d</label>
-                </div>
-                <div class="form-group">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="radio" >
-                                <label><input type="radio" name="optradio" checked>Monthly Payment</label>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="radio">
-                                <label><input type="radio" name="optradio" >Weekly Payment</label>
-                            </div>
-                        </div>
+                <form  method="POST" action="{{route('frontend.operation.PaymentPage')}}" enctype="multipart/form-data">
+                    @csrf
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Class</label>
+                        <input type="text" class="form-control" id="courseTitle" name="courseTitle" placeholder="" readonly>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Session</label>
+                        <input type="text" class="form-control" id="sessionTitle" name="sessionTitle" placeholder="" readonly>
+                        <input type="hidden" class="form-control" id="sessionID" name="sessionID" placeholder="sessionID" required>
                     </div>
 
 
-                </div>
 
-                <div class="form-group">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Select Payment Mode</label>
+                        <select id="paymentTypeSelect"  class="form-control"  name="paymentTypeSelect" required>
 
-                </div>
+                        </select>
+                    </div>
+                    <div class="form-group" id="WeekFeeDiv" style="display: none">
+                        <label for="exampleFormControlInput1">Weekly Fee</label>
+                        <input type="text" class="form-control" id="weekFee" name="weekFee" placeholder="" readonly>
+                    </div>
+
+                    <div class="form-group"  id="MonthFeeDiv" style="display: none">
+                        <label for="exampleFormControlInput1">Monthly Fee</label>
+                        <input type="text" class="form-control" id="monthFee" name="monthFee" placeholder="" readonly>
+                    </div>
 
 
-{{--             <input type="text" id="sesID" name="id">--}}
-
+                    <button type="submit" class="btn btn-primary"><span class="cil-contrast btn-icon mr-2"></span>
+                        Proceed to Payment
+                    </button>
+                </form>
             </div>
             <div class="modal-footer">
-{{--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>--}}
-                <button type="button" class="btn btn-primary">Proceed to payment</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+{{--                <button type="button" class="btn btn-primary">Save changes</button>--}}
             </div>
-            </form>
         </div>
     </div>
 </div>
     <!-- ================ contact section end ================= -->
 
 <script>
-    $('.paymentTrigBtn').unbind().click(function() {
-        // $("#editGradeModel").empty();
-        $('#sesID').val('');
+    $("#paymentTypeSelect").change(function () {
+        if($('#paymentTypeSelect').val()== 'M'){
+              $("#MonthFeeDiv").show(500);
+              $("#WeekFeeDiv").hide(500);
+        }else if($('#paymentTypeSelect').val()== 'W'){
+            $("#MonthFeeDiv").hide(500);
+            $("#WeekFeeDiv").show(500);
+        }
+    });
 
-        sessionID = "";
+    $('.paymentTrigBtn').unbind().click(function() {
+        $("#courseTitle").val('');
+        $("#sessionID").val('');
+        $("#sessionTitle").val('');
+        $("#weekFee").val('');
+        $("#monthFee").val('');
+        $("#paymentTypeSelect").empty();
         sessionID = $(this).attr("value");
         console.log(sessionID);
         $("#paymentTrigger").ready(function() {
-                    $("#sesID").val(sessionID);
-            // frontend.operation.
 
-            // $("#LabelID").empty();
-            // $("#LabelID").append("some Text");
-            {{--$.ajax({--}}
-            {{--    url: "{{ route('admin.grade.getDataForEdit') }}",--}}
-            {{--    type: "get",--}}
-            {{--    data: {id:gradeID },--}}
-            {{--    success: function(a) {--}}
-            {{--        $("#editGradeID").val(a[0]);--}}
-            {{--        $("#editGrade").val(a[1]);--}}
-            {{--        $("#editDescription").val(a[2]);--}}
-            {{--        $("#editGradeStatus").empty();--}}
-            {{--        if(a[3]=='0'){--}}
-            {{--            $("#editGradeStatus").append('<option value="0" selected>Inactive</option>');--}}
-            {{--            $("#editGradeStatus").append('<option value="1" >Active</option>');--}}
-            {{--        }else{--}}
-            {{--            $("#editGradeStatus").append('<option value="1" selected>Active</option>');--}}
-            {{--            $("#editGradeStatus").append('<option value="0">Inactive</option>');--}}
-            {{--        }--}}
+            $.ajax({
+                url: "{{ route('frontend.operation.processPaymentDetails') }}",
+                type: "get",
+                data: {session_id:sessionID },
+                success: function(a) {
+                    $("#courseTitle").val(a[0]);
+                    $("#sessionID").val(a[1]);
+                    $("#sessionTitle").val(a[2]);
+                    $("#weekFee").val(a[4]);
+                    $("#monthFee").val(a[5]);
+
+                    $("#paymentTypeSelect").empty();
+                    $("#paymentTypeSelect").append('<option value="" >Select Payment Type</option>');
+                    if(a[3]=='1'){
+                        $("#paymentTypeSelect").append('<option value="M" >Monthly</option>');
+                        $("#paymentTypeSelect").append('<option value="W" >Weekly</option>');
+                    }else{
+                        $("#paymentTypeSelect").append('<option value="M" >Monthly</option>');
+                    }
 
 
-            {{--    },--}}
-            {{--    error: function(a) {--}}
-            {{--        console.log("Data Load Error", a.responseJSON);--}}
-            {{--    }--}}
-            {{--});--}}
+                },
+                error: function(a) {
+                    console.log("Data Load Error", a.responseJSON);
+                }
+            });
 
         });
     });

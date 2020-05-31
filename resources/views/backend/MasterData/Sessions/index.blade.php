@@ -20,11 +20,12 @@
                         <table class="uk-table uk-table-hover uk-table-striped" style="font-size:11.5px;width: 100%"  id="lms_class_session_datatable">
                             <thead>
                             <tr>
-                                <th>Grade</th>
-                                <th>Title</th>
-                                <th>Description</th>
-                                <th>Monthly Fee</th>
+                                <th>Class</th>
+                                <th>Session Title</th>
+                                <th>Weekly Fee Status</th>
                                 <th>Weekly Fee</th>
+                                <th>Monthly Fee</th>
+                                <th>Payment Deadline</th>
                                 <th>Year</th>
                                 <th>Day</th>
                                 <th>Time</th>
@@ -48,12 +49,12 @@
 
 
 
-            var table = $('#lms_class_datatable').DataTable({
+            var table = $('#lms_class_session_datatable').DataTable({
                 responsive: true,
                 processing: true,
                 serverSide: true,
                 scrollX: true,
-                ajax: "{!! route('admin.class.getData_classes') !!}",
+                ajax: "{!! route('admin.class_session.getData_classSessions') !!}",
                 columns: [
                     { data: 'grade' },
                     { data: 'title' },

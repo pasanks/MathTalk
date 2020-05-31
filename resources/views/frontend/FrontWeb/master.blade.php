@@ -10,7 +10,8 @@
         <div class="row align-items-center">
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="index.html"> <img src="{{ asset('FrontWeb/img/logo.png') }}" alt="logo"> </a>
+{{--                    <a class="navbar-brand" href="index.html"> <img src="{{ asset('FrontWeb/img/logo.png') }}" alt="logo" height="47px" width="165px"> </a>--}}
+                    <a class="navbar-brand" href="index.html"><h4><b>themathtalk.com</b></h4></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -98,7 +99,7 @@
             <div class="col-sm-6 col-md-4 col-xl-4">
                 <div class="single-footer-widget footer_2">
                     <h4>Newsletter</h4>
-                    <p>Stay updated with our latest trends Seed heaven so said place winged over given forth fruit.
+                    <p>Stay updated with our latest trends.
                     </p>
                     <form action="#">
                         <div class="form-group">

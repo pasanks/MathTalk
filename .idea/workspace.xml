@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="057112a0-7820-4f17-8030-382c4fe9d781" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_ide_helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/_ide_helper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Session/SessionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Session/SessionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Operation/OperationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/Operation/OperationController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Frontend/User/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Frontend/User/DashboardController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/Includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/Includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Auth/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Auth/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repositories/Frontend/Auth/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repositories/Frontend/Auth/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_08_033555_create_user_sessions_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_08_033555_create_user_sessions_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/FrontWeb/img/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/FrontWeb/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/FrontWeb/img/testimonial_img_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/MasterData/Sessions/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/FrontWeb/master.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/backend/classSession.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/backend/classSession.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/frontend/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/frontend/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -203,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Fictball" />
+    <property name="last_opened_file_path" value="G:/Bitnami/apache2/htdocs/Ceylinco" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
@@ -255,7 +258,13 @@
       <workItem from="1589048076615" duration="7511000" />
       <workItem from="1589085738625" duration="13000" />
       <workItem from="1589086166103" duration="3057000" />
-      <workItem from="1589188259729" duration="2719000" />
+      <workItem from="1589188259729" duration="5332000" />
+      <workItem from="1589449775573" duration="3524000" />
+      <workItem from="1589730012170" duration="1974000" />
+      <workItem from="1589806861371" duration="1373000" />
+      <workItem from="1590255058033" duration="11056000" />
+      <workItem from="1590596709905" duration="7592000" />
+      <workItem from="1590843067894" duration="13084000" />
     </task>
     <servers />
   </component>
@@ -295,18 +304,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php</url>
-          <line>173</line>
+          <line>186</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php</url>
-          <line>163</line>
+          <line>176</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/frontend/user/dashboard.blade.php</url>
-          <line>92</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/resources/views/frontend/FrontWeb/index.blade.php</url>
+          <line>376</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/backend/MasterData/Grade/index.blade.php</url>
+          <line>74</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Backend/MasterData/Grade/GradeController.php</url>

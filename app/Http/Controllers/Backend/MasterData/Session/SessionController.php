@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Backend\MasterData\Session;
 use App\Http\Controllers\Controller;
 use App\Models\MasterData\ClassD;
 use App\Models\MasterData\ClassSession;
+use App\Models\MasterData\Grade;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Redirect;
@@ -50,9 +51,36 @@ class SessionController extends Controller
 
         $newClassSession->use_class_dates = $useClassDates;
         $newClassSession->use_class_fees = $useClassFees;
+        $newClassSession->payment_end_date = $request->get('payment_end_date');;
         $newClassSession->created_by = \Auth::user()->id;
         $newClassSession->created_at = Carbon::now();
         $newClassSession->save();
         return Redirect::route('admin.class_session.index')->withFlashSuccess('New Class Session has been created!');
+    }
+
+    public function getData_classSessions(){
+        $sessionDetails = ClassSession::all();
+        return datatables()->of($sessionDetails)
+            ->addColumn('class', function ($sessionDetails){
+                return ClassD::find($sessionDetails->class_id)->title;
+            })
+            ->addColumn('status', function ($data){
+                if($data->status == '1'){
+                    return '<span class="badge bg-success">Active</span>';
+                }else{
+                    return '<span class="badge bg-danger">Inactive</span>';
+                }
+            })
+            ->addColumn('action', function ($data){
+                return view('backend.MasterData.Class.classBtn',['data'=>$data])->render();
+
+            })
+            ->rawColumns(['grade','status','action'])
+            ->make(true);
+    }
+
+
+    public function editClassSession(){
+
     }
 }

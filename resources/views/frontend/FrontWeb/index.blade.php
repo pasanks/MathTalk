@@ -25,11 +25,11 @@
             <div class="col-lg-6 col-xl-6">
                 <div class="banner_text">
                     <div class="banner_text_iner">
-                        <h5>Every child yearns to learn</h5>
-                        <h1>Making Your
-                            World Better</h1>
+
+                        <h1>TheMathTalk</h1>
+                        <h5>Academy of mathematics</h5>
                         <p>We’re an organization with the incentive to teach Mathematics to students from grade 6 to
-                            upwards till Advanced Level Examination, covering both London and Local syllabi.</p>
+                            upwards till Advanced Level Examination, covering both London and Local syllabi. </p>
                         <a href="{{route('frontend.courses')}}" class="btn_1">View Classes </a>
                         <a href="{{route('frontend.registerView')}}" class="btn_2">Get Started </a>
                     </div>
@@ -314,11 +314,11 @@
                         <div class="row">
                             <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
                                 <div class="testimonial_slider_text">
-                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                        hath herb divided divide creepeth living shall i call beginning
-                                        third sea itself set</p>
-                                    <h4>Michel Hashale</h4>
-                                    <h5> Sr. Web designer</h5>
+                                    <p>Attending this class was one of the reasons which helped me change the continuous
+                                        low marks. The teacher has his unique ways of helping
+                                        us to figure out a way to use several thinking patterns. Can definitely say that this class has changed my scores as well as my mindset.</p>
+                                    <h4>Pasan Kavinga</h4>
+                                    <h5>Software Engineer</h5>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-xl-2 col-sm-4">
@@ -328,43 +328,11 @@
                             </div>
                             <div class="col-xl-4 d-none d-xl-block">
                                 <div class="testimonial_slider_text">
-                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                        hath herb divided divide creepeth living shall i call beginning
-                                        third sea itself set</p>
-                                    <h4>Michel Hashale</h4>
-                                    <h5> Sr. Web designer</h5>
-                                </div>
-                            </div>
-                            <div class="col-xl-2 d-none d-xl-block">
-                                <div class="testimonial_slider_img">
-                                    <img src=" {{ asset('FrontWeb/img/testimonial_img_1.png') }}" alt="#">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial_slider">
-                        <div class="row">
-                            <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">
-                                <div class="testimonial_slider_text">
-                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                        hath herb divided divide creepeth living shall i call beginning
-                                        third sea itself set</p>
-                                    <h4>Michel Hashale</h4>
-                                    <h5> Sr. Web designer</h5>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-xl-2 col-sm-4">
-                                <div class="testimonial_slider_img">
-                                    <img src=" {{ asset('FrontWeb/img/testimonial_img_2.png') }}" alt="#">
-                                </div>
-                            </div>
-                            <div class="col-xl-4 d-none d-xl-block">
-                                <div class="testimonial_slider_text">
-                                    <p>Behold place was a multiply creeping creature his domin to thiren open void
-                                        hath herb divided divide creepeth living shall i call beginning
-                                        third sea itself set</p>
-                                    <h4>Michel Hashale</h4>
-                                    <h5> Sr. Web designer</h5>
+                                    <p>This class has been an amazing experience. where it helped me to rise up from the
+                                        below average marks to personal best scores. Unlike other classes the bordem never
+                                        reaches us due to the unique style of teaching techniques used by the teacher.</p>
+                                    <h4>Navodya De Silva</h4>
+                                    <h5> Junior Architect</h5>
                                 </div>
                             </div>
                             <div class="col-xl-2 d-none d-xl-block">
@@ -406,6 +374,38 @@
                             </div>
                         </div>
                     </div>
+{{--                    <div class="testimonial_slider">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-lg-8 col-xl-4 col-sm-8 align-self-center">--}}
+{{--                                <div class="testimonial_slider_text">--}}
+{{--                                    <p>Behold place was a multiply creeping creature his domin to thiren open void--}}
+{{--                                        hath herb divided divide creepeth living shall i call beginning--}}
+{{--                                        third sea itself set</p>--}}
+{{--                                    <h4>Michel Hashale</h4>--}}
+{{--                                    <h5> Sr. Web designer</h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-lg-4 col-xl-2 col-sm-4">--}}
+{{--                                <div class="testimonial_slider_img">--}}
+{{--                                    <img src=" {{ asset('FrontWeb/img/testimonial_img_3.png') }}" alt="#">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-xl-4 d-none d-xl-block">--}}
+{{--                                <div class="testimonial_slider_text">--}}
+{{--                                    <p>Behold place was a multiply creeping creature his domin to thiren open void--}}
+{{--                                        hath herb divided divide creepeth living shall i call beginning--}}
+{{--                                        third sea itself set</p>--}}
+{{--                                    <h4>Michel Hashale</h4>--}}
+{{--                                    <h5> Sr. Web designer</h5>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                            <div class="col-xl-2 d-none d-xl-block">--}}
+{{--                                <div class="testimonial_slider_img">--}}
+{{--                                    <img src=" {{ asset('FrontWeb/img/testimonial_img_3.png') }}" alt="#">--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
                 </div>
             </div>
 

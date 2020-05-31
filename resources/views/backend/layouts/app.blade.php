@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="{{ asset('css/jquery.dataTables.min.css') }}">
 
     <script src="{{ asset('js/jquery.min.js') }}" ></script>
+    <script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}" ></script>
     <script src="{{ asset('js/popper.min.js') }}" ></script>
     <!-- Check if the language is set to RTL, so apply the RTL layouts -->
